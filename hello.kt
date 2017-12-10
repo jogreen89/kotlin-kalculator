@@ -11,12 +11,16 @@ class Message(val body: String) {
 }
 
 class Adder(val args: Array<Int>) {
-  fun print() {
+  fun out() {
     println("Running print() in Adder")
-    // Message("${}")
   }
 }
 
+class Subtracter(val args: Array<Int>) {
+  fun out() {
+    println("Running Subtracter")
+  }
+}
 
 fun main(args: Array<String>) {
   println("Kotlin Kalculator:")
@@ -24,6 +28,5 @@ fun main(args: Array<String>) {
     Message("Please provide a username to access the calculator.")
     return
   }
-  // Adder(arrayOf(1, 2, 3)).print()
-  Message("Welcome to the Kalculator: ${args[0]}.").out()
+  Message("Welcome to the Kalculator: ${args[0]}").out()
 }
