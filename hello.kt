@@ -22,6 +22,18 @@ class Subtracter(val args: Array<Int>) {
   }
 }
 
+class Multiplier(val args: Array<Int>) {
+  fun out() {
+    println("Running Multiplier")
+  }
+}
+
+class Divider(val args: Array<Int>) {
+  fun out() {
+    println("Running Divider")
+  }
+}
+
 fun main(args: Array<String>) {
   println("Kotlin Kalculator:")
   if (args.size == 0) {

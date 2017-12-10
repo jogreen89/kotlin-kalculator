@@ -1,1 +1,14 @@
+# Ignore JAR files
+
 *.jar
+
+# Ignore Gradle build scripts
+build.gradle
+.gradle/
+gradle/
+gradle*
+
+# Ignore build/ directory
+build/
+
+.DS_Store
